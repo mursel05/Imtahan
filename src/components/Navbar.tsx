@@ -5,7 +5,13 @@ const Navbar = () => {
   return (
     <div className="flex bg-white justify-between items-center px-[5rem] py-[1rem]">
       <div className="flex items-center gap-4">
-        <Image src="/favicon.png" alt="logo" width={100} height={100} />
+        <Image
+          src="/favicon.png"
+          alt="logo"
+          width={100}
+          height={100}
+          className="w-[6.25rem] h-auto"
+        />
         <p className="font-400 text-[2rem]">IMTAHAN.DEV</p>
       </div>
       <Image

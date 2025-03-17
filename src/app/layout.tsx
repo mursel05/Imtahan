@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.scss";
 import { DataProvider } from "@/context/ApiContext";
-import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 
 export const metadata: Metadata = {

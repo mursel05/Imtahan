@@ -68,7 +68,7 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <form className="flex flex-col gap-4" onSubmit={handleForm}>
-        <h1 className="text-center text-3xl font-medium">İMTAHAN.DE</h1>
+        <h1 className="text-center text-3xl font-medium">İMTAHAN.DEV</h1>
         <TextInput
           label="Email"
           size="lg"

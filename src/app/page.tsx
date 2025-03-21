@@ -15,7 +15,7 @@ const Home = () => {
         if (res.data.success) {
           setUser(res.data.data);
         }
-      } catch (error) {}
+      } catch {}
     }
     getUser();
   }, []);

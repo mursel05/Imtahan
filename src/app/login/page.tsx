@@ -21,7 +21,7 @@ const Login = () => {
       if (res.data.success) {
         router.push("/");
       }
-    } catch (error) {}
+    } catch {}
   }
 
   function handleForm(e: React.ChangeEvent<HTMLFormElement>): void {
@@ -62,7 +62,7 @@ const Login = () => {
       await axiosInstance.post("/users/forgot-password", {
         email: email,
       });
-    } catch (error) {}
+    } catch {}
   }
 
   return (

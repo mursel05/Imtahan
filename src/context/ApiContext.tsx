@@ -3,9 +3,12 @@ import { UserType } from "@/models/user";
 import { createContext, useState } from "react";
 import { ReactNode } from "react";
 
-export const DataContext = createContext({
-  user: undefined as UserType | undefined,
-  setUser: (user: UserType) => {},
+export const DataContext = createContext<{
+  user: UserType | undefined;
+  setUser: React.Dispatch<React.SetStateAction<UserType | undefined>>;
+}>({
+  user: undefined,
+  setUser: () => {},
 });
 
 export const DataProvider = ({ children }: { children: ReactNode }) => {

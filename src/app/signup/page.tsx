@@ -29,7 +29,7 @@ const SignUp = () => {
       if (res.data.success) {
         router.push("/");
       }
-    } catch (error) {}
+    } catch {}
   }
 
   function handleForm(e: React.ChangeEvent<HTMLFormElement>): void {

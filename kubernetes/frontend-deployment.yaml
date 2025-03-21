@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: frontend
+          image: imtahan.azurecr.io/frontend:b208c10da813cdce5b66f07785cd6d19963be1ec
+          ports:
+            - containerPort: 3000
+

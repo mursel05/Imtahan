@@ -2,9 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: false,
-  devIndicators: {
-    appIsrStatus: false,
-  },
+  devIndicators: false,
   images: {
     remotePatterns: [
       {

@@ -15,6 +15,6 @@ spec:
       containers:
         - name: frontend
           image: imtahan.azurecr.io/frontend:b208c10da813cdce5b66f07785cd6d19963be1ec
+          imagePullPolicy: Always
           ports:
             - containerPort: 3000
-

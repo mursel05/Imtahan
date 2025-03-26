@@ -23,7 +23,9 @@ const Home = () => {
   return (
     <div className="bg-[#f5f5f5] h-screen">
       <Navbar />
-      <Sidebar />
+      <div className="flex h-screen">
+        <Sidebar />
+      </div>
     </div>
   );
 };

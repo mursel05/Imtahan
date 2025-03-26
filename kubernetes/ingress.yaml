@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: imtahan-ingress
 spec:
-  ingressClassName: webapprouting.kubernetes.azure.com
+  ingressClassName: nginx
   rules:
     - http:
         paths:
